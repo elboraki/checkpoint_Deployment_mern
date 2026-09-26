@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - MyRecipe
+name: Build and deploy Node.js app to Azure Web App - myrecipe
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_197CE017A33940F39B7FF22740E1608B }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_14AE9203E8D84802B6D9B2F52FFAB7FB }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5D41D3DD986A49FAA5A708ED26055E16 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8CBE2A31983546BE985EA3FCE02B8111 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2CFEF5CCEC7C4419A82BB2D85A25D61A }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_30061CFB48BB4F7992E277534E0198F6 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'MyRecipe'
+          app-name: 'myrecipe'
           slot-name: 'Production'
           package: .
           
