@@ -1,0 +1,20 @@
+{
+  "name": "recipe-management-mern",
+  "version": "1.0.0",
+  "description": "MERN stack Recipe Management app, structured for deployment to Azure App Service",
+  "private": true,
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install-all": "npm run install-server && npm run install-client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently -n server,client -c blue,green \"npm:dev:server\" \"npm:dev:client\"",
+    "build": "npm run install-client && npm run build --prefix client",
+    "start": "node server/index.js",
+    "postinstall": "npm run install-all"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
