@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import AddRecipe from "./pages/AddRecipe";
 import EditRecipe from "./pages/EditRecipe";
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/recipes/:id/edit" element={<EditRecipe />} />
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }
