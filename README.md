@@ -1,5 +1,7 @@
 # Recipe Book — MERN Stack (Azure Deployment Checkpoint)
 
+🔗 **Live app:** [https://recipefood101-evbrc0bjfgfsbxbh.centralus-01.azurewebsites.net/](https://recipefood101-evbrc0bjfgfsbxbh.centralus-01.azurewebsites.net/)
+
 A full CRUD recipe management app (MongoDB, Express, React, Node) built to satisfy the
 "Hosting a MERN App on Microsoft Azure" checkpoint. The client builds straight into
 `server/public`, so the Express app can serve both the API and the frontend from a single
@@ -111,6 +113,7 @@ Visit http://localhost:5000 — Express now serves the React build and the API t
 9. **Test the deployed app**: open `https://<app-name>.azurewebsites.net`, and confirm you can
    list, add, edit and delete recipes — this verifies both the deployment and the MongoDB
    Atlas connection.
+   - This checkpoint is live at: https://recipefood101-evbrc0bjfgfsbxbh.centralus-01.azurewebsites.net/
 
 ## API reference
 
